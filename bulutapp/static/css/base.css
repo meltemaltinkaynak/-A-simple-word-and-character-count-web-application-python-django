@@ -1,0 +1,45 @@
+
+/* color: rgb(51, 51, 51)   rgb(53, 51, 51) */
+
+body{
+    background-color:  #8a8aab;
+    
+    height: 100%;
+ }
+
+/* MENÜ */
+
+ .header .logo img{
+    height: 50px;
+    font-weight: 300;
+}
+
+
+.header {
+    background-color:  #8a8aab;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 100px;
+    box-shadow: 13px 24px 107px 13px #ffffff;
+    z-index: 1000;
+    position: fixed;
+    top: 30px;
+    left: 0;
+    right: 0;
+}
+
+.header .navbar a{
+    margin: 0 60px;
+    color: rgb(255, 255, 255);
+    font-family:"Courier New", Courier, monospace;
+    font-size: 18px;
+    text-decoration: none; /* Alt çizgiyi kaldır */
+    font-weight: bold; 
+    
+} 
+
+.header .navbar a:hover{    
+    color:rgb(47, 43, 43);
+}

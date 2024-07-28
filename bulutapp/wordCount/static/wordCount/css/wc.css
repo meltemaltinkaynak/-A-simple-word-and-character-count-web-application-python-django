@@ -1,0 +1,41 @@
+.container {
+    background: rgb(67, 67, 67);
+    padding: 140px;
+    padding-bottom: 80px;
+    border-radius: 16px;
+    position: absolute;
+    top: 30%;
+    left: 40%;
+}
+
+.container h1 {
+    color: #000000;
+    position: absolute;
+    font-size: 18px;
+    font-family: "Courier New", Courier, monospace;
+    top: 30px;
+    left: 48px;
+}
+
+
+p {
+    font-family: "Courier New", Courier, monospace;
+    font-size: 60px;
+    position: absolute;
+    top: 40px;
+    left: 150px;
+    color: #ffffff;
+    margin-bottom: 30px;
+
+}
+
+.container a {
+    display: block;
+    margin-top: 80px;
+    text-decoration: none;
+    color: #c17110;
+}
+
+a:hover {
+    color: #000000;
+}

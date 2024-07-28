@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+{% load static %}
+
+
+{% block css_files %}
+    <link rel="stylesheet" href="{% static 'wordCount/css/wc.css' %}">
+{% endblock %}
+
+
+
+{% block title %}
+Word Counter 
+{% endblock %}
+
+{% block icerik %}
+
+<div class="container">
+    <h1>NUMBER OF WORDS IN YOUR FILE</h1>
+    <p>{{ word_count }}</p>
+    <a href="{% url 'details' %}">Upload another file</a>
+</div>
+
+{% endblock %}
+
+{% block js_files %}
+<script src=""></script>
+{% endblock %}

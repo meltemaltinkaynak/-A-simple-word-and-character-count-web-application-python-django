@@ -1,0 +1,34 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block css_files %}
+    <link rel="stylesheet" href="{% static 'wordCount/css/filewordCounter.css' %}">
+{% endblock %}
+
+
+{% block title %}
+Word Counter 
+{% endblock %}
+
+{% block icerik %}
+<div class="container">
+        <h1>Upload a .docx or .txt file and count words!</h1>
+        <form method="post" enctype="multipart/form-data">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <button type="submit">WORD COUNT</button>
+        </form>
+        
+        {% if messages %}
+            <ul>
+                {% for message in messages %}
+                    <li>{{ message }}</li>
+                {% endfor %}
+            </ul>
+        {% endif %}
+</div>
+{% endblock %}
+
+{% block js_files %}
+<script src=""></script>
+{% endblock %}

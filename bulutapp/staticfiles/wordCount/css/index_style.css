@@ -1,0 +1,27 @@
+.content-container {
+    display: flex;
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
+    height: 100vh; 
+}
+
+.styled-button {
+    display: inline-block;
+    padding: 40px 80px;
+    margin: 10px 0; 
+    font-size: 18px;
+    color: #fff;
+    background-color:  rgb(67, 67, 67);
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s, transform 0.3s;
+    font-family:"Courier New", Courier, monospace
+}
+
+.styled-button:hover {
+    background-color: #6994c2;
+    transform: scale(1.05);
+}
+

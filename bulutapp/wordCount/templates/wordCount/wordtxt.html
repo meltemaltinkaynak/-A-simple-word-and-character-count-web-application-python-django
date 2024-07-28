@@ -1,0 +1,45 @@
+{% extends "base.html" %}
+{% load static %}
+
+
+{% block css_files %}
+    <link rel="stylesheet" href="{% static 'wordCount/css/wordtxt.css' %}">
+{% endblock %}
+
+
+
+{% block title %}
+Word Counter 
+{% endblock %}
+
+{% block icerik %}
+
+<form method="post">
+    {% csrf_token %}
+    <div class="wrapper">
+        <h4>WORD COUNTER</h4>
+
+        <div class="container">
+            <textarea id="input-textarea" rows="25" cols="80" placeholder="Start typing text here.."></textarea>
+        </div>
+    </div>
+
+    <div class="counter-word">
+        <div>
+            <h5 id="word-count">0</h5>
+            <p>WORDS</p>
+        </div>
+    </div>
+
+    <div class="counter-character">
+        <div>
+            <h5 id="character-count">0</h5>
+            <p>CHARACTERS</p>
+        </div>
+    </div>
+</form>
+{% endblock %}
+
+{% block js_files %}
+<script src="{% static 'wordCount/js/wordtxt.js' %}"></script>
+{% endblock %}
